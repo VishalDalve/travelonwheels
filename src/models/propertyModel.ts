@@ -9,6 +9,7 @@ export interface IPropertyModel extends Document {
 
     title: string,
     images: Array<string>,
+    category:string,
     description: string,
     overview: string,
     itinerary: string,
@@ -32,6 +33,9 @@ const PropertySchema: Schema = new Schema({
     images: [],
 
     description: {
+        type: String
+    },
+    category: {
         type: String
     },
     price: {

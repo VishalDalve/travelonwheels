@@ -88,6 +88,7 @@ class PropertyController {
                   
                 }
                 property.title = req.body.propertyName;
+                property.category = req.body.category;
                 property.price = req.body.price;
                 property.description = req.body.description;
                 property.overview = req.body.overview;
