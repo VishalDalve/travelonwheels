@@ -1,13 +1,15 @@
-# travelonwheels
+# Travel on Wheels
 
-Project setup Guide
+----------   Project setup Guide   ----------
 
-install mongodb
+1. Install & start mongodb
 
-clone repository
+2. clone current repository
 
-go inside folder
+3. GO inside folder
 
-$npm i
+4. $npm i
+
+5. $nodemon
 
 You are ready to go on http://localhost:3000
