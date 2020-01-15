@@ -6,6 +6,7 @@ import { Auth } from '../config/authMiddleware';
 // const swaggerUi = require('swagger-ui-express');
 // const swaggerDocument = require('../swagger-doc/swagger-api-v1.json');
 import { upload } from '../service/fileUpload';
+import PlanRouter from './planRouter';
 
 export default class Routes {
     /**
@@ -20,6 +21,8 @@ export default class Routes {
         server.app.use('/api/v1/auth', new AuthRouter().router);
         // users
         server.app.use('/api/v1/users', Auth, new UserRouter().router);
+        // property
+        server.app.use('/api/v1/plan', new PlanRouter().router);
         
         //Swagger API
       //  server.app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));

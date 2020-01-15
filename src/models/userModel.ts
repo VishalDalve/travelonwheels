@@ -48,7 +48,7 @@ const UserSchema: Schema = new Schema({
         this.updatedAt = now;
         this.isActive = !! this.isActive;
         this.role = this.role || Role.USER;
-        this.isVerified = false;
+        this.isVerified = true;
     }
     next();
   }).pre('updateOne', function<IUserModel>(next) {
